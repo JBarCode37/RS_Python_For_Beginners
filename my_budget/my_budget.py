@@ -7,8 +7,8 @@ def get_goals():
         with open(filename) as f:
             goals = f.readlines()
             goals = [goal.rstrip() for goal in goals]
-            for index, goal in inumerate(goals):
-                print(goal)
+            for i, goal in enumerate(goals):
+                print(f'#{i}: {goal}')
     else:
         # Get goals from user
         n = input('Enter the number of goals: ')
@@ -67,6 +67,7 @@ def main():
     # print_savings(savings)
     # income = get_income()
     # print_income(income)
+    get_goals()
     bills_list = ['rent', 'car', 'food', 'total utilities', 'pet food']
     bills = get_bill_amounts(bills_list)
     print_bills(bills)
