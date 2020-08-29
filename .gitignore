@@ -1,3 +1,6 @@
+# Additional items
+my_budget/data/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
